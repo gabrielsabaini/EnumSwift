@@ -11,7 +11,7 @@ import SwiftUI
 struct ComponentizacaoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           TelaView()
         }
     }
 }
