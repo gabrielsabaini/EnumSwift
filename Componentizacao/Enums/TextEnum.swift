@@ -47,7 +47,7 @@ enum TextEnum {
         case .smalllabel: return "Small Label"
         case .caption: return "Caption"
         case .brascumb: return "breadcrumb"
-        case .heading3bold: return "heading3bold"
+        case .heading3bold: return "heading3"
         case .body1bold: return "Body 1"
         case .body2bold: return "Body 2"
         case .captionbold: return "Caption"
@@ -132,76 +132,26 @@ enum TextEnum {
     
     var bolding: Bool {
         switch self {
-        case .display1: return false
-        case .display2: return false
-        case .heading1: return false
-        case .heading2: return false
         case .heading2bold: return true
-        case .heading3: return false
-        case .body1: return false
-        case .body2: return false
-        case .ctamedium: return false
-        case .ctasmall: return false
-        case .label1: return false
-        case .label2: return false
-        case .smalllabel: return false
-        case .caption: return false
-        case .brascumb: return false
         case .heading3bold: return true
         case .body1bold: return true
         case .body2bold: return true
         case .captionbold: return true
-        case .brascumbsublinhado: return false
+        default: return false
         }
     }
     
     var italic: Bool {
         switch self {
-        case .display1: return false
-        case .display2: return false
-        case .heading1: return false
-        case .heading2: return false
-        case .heading2bold: return false
-        case .heading3: return false
-        case .body1: return false
-        case .body2: return false
-        case .ctamedium: return false
-        case .ctasmall: return false
-        case .label1: return false
-        case .label2: return false
-        case .smalllabel: return false
-        case .caption: return false
         case .brascumb: return true
-        case .heading3bold: return false
-        case .body1bold: return false
-        case .body2bold: return false
-        case .captionbold: return false
-        case .brascumbsublinhado: return false
+        default: return false
         }
     }
         
     var sublinhado: Bool {
         switch self {
-        case .display1: return false
-        case .display2: return false
-        case .heading1: return false
-        case .heading2: return false
-        case .heading2bold: return false
-        case .heading3: return false
-        case .body1: return false
-        case .body2: return false
-        case .ctamedium: return false
-        case .ctasmall: return false
-        case .label1: return false
-        case .label2: return false
-        case .smalllabel: return false
-        case .caption: return false
-        case .brascumb: return false
-        case .heading3bold: return false
-        case .body1bold: return false
-        case .body2bold: return false
-        case .captionbold: return false
         case .brascumbsublinhado: return true
+        default: return false
         }
     }
 }
